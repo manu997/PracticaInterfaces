@@ -1,6 +1,19 @@
-.container {
-    background-color: gray;
+body {
+    margin-bottom: 5%;
 }
-h1 {
-    color: white;
+.container {
+    background-color: #D8D8D8;
+}
+.card {
+    text-align: center;
+    padding: 2%;
+    width: 20vw;
+    margin-top: 20%;
+}
+.container {
+    margin-bottom: 5%;
+    padding-bottom: 5%
+}
+.form-control {
+    width: 30vw
 }
