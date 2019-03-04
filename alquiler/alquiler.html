@@ -1,103 +1,188 @@
 <html>
-    <head>
-        <title>Alquiler</title>
-        <meta charset="utf-8">
-        <script src="js/jquery.js"></script>
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-        <link rel="stylesheet" type="text/css" href="css/header.css">
-        <link rel="stylesheet" type="text/css" href="css/alquiler.css">
-        <script> 
-            $(document).ready(function(){
-                $("#header").load("header.html");
-            });
-        </script> 
-    </head>
-    <body>
-        <div id="header"></div>
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <h1 class="text-center">ALQUILER</h1>
+<head>
+    <title>Alquiler</title>
+    <meta charset="utf-8">
+    <script src="js/jquery.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" 
+        href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" 
+        crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="css/alquiler.css">
+</head>
+<body>
+    <div id="header">
+        <div class="row">
+            <div class="col-md-2">
+                <h2 class="text-center">LOGO</h2>
+            </div>
+            <div class="col-md-2">
+                <button class="btn btn-success">Inicio</button>
+            </div>
+            <div class="col-md-2">
+                <button class="btn btn-success">Alquiler</button>
+            </div>
+            <div class="col-md-2">
+                <button class="btn btn-success">Contacto</button>
+            </div>
+            <div class="offset-1 col-md-2">
+                <button class="btn btn-success" id="login">Iniciar sesión o registrarse</button>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12" id="titulo_alquiler">
+                <h1 class="text-center">ALQUILER</h1>
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-md-2">
+                <select class="form-control">
+                    <option>Marca</option>
+                </select>
+            </div>
+            <div class="col-md-2">
+                <select class="form-control">
+                    <option>Modelo</option>
+                </select>
+            </div>
+            <div class="col-md-2">
+                <select class="form-control">
+                    <option>Potencia</option>
+                </select>
+            </div>
+            <div class="col-md-2">
+                <select class="form-control">
+                    <option>Precio</option>
+                </select>
+            </div>
+            <div class="col-md-2 col-sm-12">
+                <button class="btn btn-info" id="filtrar">Filtrar</button>
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-sm-12 col-md-3">
+                <div href="" class="card">
+                    <img src="img/5acfb42d9765c.jpeg" class="card-img-top" width="auto" height="auto">
+                    <div class="card-body">
+                        <h5>Audi R8 V10 Plus</h5>
+                        <span>610 CV - 560 Nm</span>
+                    </div>
                 </div>
             </div>
-            <div class="row justify-content-center">
-                <div class="col-md-2 col-sm-6">
-                    <select class="form-control">
-                        <option>Marca</option>
-                    </select>
-                </div>
-                <div class="col-md-2 col-md-6">
-                    <select class="form-control">
-                        <option>Modelo</option>
-                    </select>
-                </div>
-                <div class="col-md-2 col-sm-6">
-                    <select class="form-control">
-                        <option>Potencia</option>
-                    </select>
-                </div>
-                <div class="col-md-2 col-sm-6">
-                    <select class="form-control">
-                        <option>Precio</option>
-                    </select>
-                </div>
-                <div class="col-md-2 col-sm-6">
-                    <button class="btn btn-info">Filtrar</button>
-                </div>
-            </div>
-            <div class="row justify-content-center">
-                <div class="col-md-3 col-sm-12">
-                    <div href="" class="card">
-                        <img src="img/5acfb42d9765c.jpeg" class="card-img-top" width="auto" height="auto">
-                        <div class="card-body">
-                            Prueba
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3 col-sm-12">
-                    <div href="" class="card">
-                        <img src="img/5acfb42d9765c.jpeg" class="card-img-top" width="auto" height="auto">
-                        <div class="card-body">
-                            Prueba
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3 col-sm-12">
-                    <div href="" class="card">
-                        <img src="img/5acfb42d9765c.jpeg" class="card-img-top" width="auto" height="auto">
-                        <div class="card-body">
-                            Prueba
-                        </div>
+            <div class="col-sm-12 col-md-3">
+                <div href="" class="card">
+                    <img src="img/bmw_m4_gts_01.jpg" class="card-img-top" width="auto" height="auto">
+                    <div class="card-body">
+                        <h5>BMW M4 GTS</h5>
+                        <span>500 CV - 600 Nm</span>
                     </div>
                 </div>
             </div>
-            <div class="row justify-content-center">
-                <div class="col-md-3 col-sm-12">
-                    <div href="" class="card">
-                        <img src="img/5acfb42d9765c.jpeg" class="card-img-top" width="auto" height="auto">
-                        <div class="card-body">
-                            Prueba
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3 col-sm-12">
-                    <div href="" class="card">
-                        <img src="img/5acfb42d9765c.jpeg" class="card-img-top" width="auto" height="auto">
-                        <div class="card-body">
-                            Prueba
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3 col-sm-12">
-                    <div href="" class="card">
-                        <img src="img/5acfb42d9765c.jpeg" class="card-img-top" width="auto" height="auto">
-                        <div class="card-body">
-                            Prueba
-                        </div>
+            <div class="col-sm-12 col-md-3">
+                <div href="" class="card">
+                    <img src="img/2560_3000.jpg" class="card-img-top" width="auto" height="auto">
+                    <div class="card-body">
+                        <h5>Porsche 911 Turbo S</h5>
+                        <span>540 CV - 710 Nm</span>
                     </div>
                 </div>
             </div>
         </div>
-    </body>
+        <div class="row justify-content-center">
+            <div class="col-sm-12 col-md-3">
+                <div href="" class="card">
+                    <img src="img/mercedes_c63_s_review_50.jpg" class="card-img-top" width="auto" height="auto">
+                    <div class="card-body">
+                        <h5>Mercedes-Benz C63s AMG</h5>
+                        <span>510 CV - 700 Nm</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-3">
+                <div href="" class="card">
+                    <img src="img/gtrnismo_09.jpg" class="card-img-top" width="auto" height="auto">
+                    <div class="card-body">
+                        <h5>Nissan GTR Nismo</h5>
+                        <span>600 CV - 652 Nm</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-3">
+                <div href="" class="card">
+                    <img src="img/2560_3000_(20)_thumb_730.jpg" class="card-img-top" width="auto" height="auto">
+                    <div class="card-body">
+                        <h5>Lamborguini Huracán Performante</h5>
+                        <span>640 CV - 600 Nm</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row justify-content-center" id="filaCargar">
+            <div class="col-sm-12 col-md-4">
+                <button class="btn btn-info" id="cargarMas">Cargar más</button>
+            </div>
+        </div>
+        <div class="row justify-content-center">
+                <div class="col-sm-12 col-md-3 adicional1">
+                    <div href="" class="card">
+                        <img src="img/1366_2000.jpg" class="card-img-top" width="auto" height="auto">
+                        <div class="card-body">
+                            <h5>Ferrari 812 Superfast</h5>
+                            <span>800 CV - 718 Nm</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-3 adicional1">
+                    <div href="" class="card">
+                        <img src="img/vw-golf-r-05-980x540.jpg" class="card-img-top" width="auto" height="auto">
+                        <div class="card-body">
+                            <h5>Volkswagen Golf R</h5>
+                            <span>310 CV - 400 Nm</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-3 adicional1">
+                    <div href="" class="card">
+                        <img src="img/Audi-RS7_Sportback_2015_C01.jpg" class="card-img-top" width="auto" height="auto">
+                        <div class="card-body">
+                            <h5>Audi RS7 Sportback</h5>
+                            <span>605 CV - 750 Nm</span>
+                        </div>
+                    </div>
+                </div>
+        </div>
+        <div class="row justify-content-center">
+                <div class="col-sm-12 col-md-3 adicional1">
+                    <div href="" class="card">
+                        <img src="img/1.jpg" class="card-img-top" width="auto" height="auto">
+                        <div class="card-body">
+                            <h5>Ford Mustang GT</h5>
+                            <span>460 CV - 529 Nm</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-3 adicional1">
+                    <div href="" class="card">
+                        <img src="img/300px-Tesla_Model_S_(Facelift_ab_04-2016)_trimmed.jpg" class="card-img-top" width="auto" height="auto">
+                        <div class="card-body">
+                            <h5>Tesla Model S</h5>
+                            <span>612 CV - 967 Nm</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-3 adicional1">
+                    <div href="" class="card">
+                        <img src="img/maserati_granturismo_2018_6490_1.jpg" class="card-img-top" width="auto" height="auto">
+                        <div class="card-body">
+                            <h5>Maserati GranTurismo MC</h5>
+                            <span>460 CV - 520 Nm</span>
+                        </div>
+                    </div>
+                </div>
+        </div>
+    </div>
+</body>
+<script src="js/cargarMas.js"></script>
 </html>
