@@ -1,9 +1,9 @@
 body{
-	background: #4E5869;
+	background-image: linear-gradient(to bottom right, #5F94FF, #FFFFFF);
 }
 #cabecera{
 		display:inline;
-		background-image: linear-gradient(#D1CFFF,white);
+		background-image: linear-gradient(to bottom right, #FFF889, white);
 		margin-left:5%;
 		margin-right:5%;
 		width: 90%;
@@ -54,7 +54,7 @@ body{
 
 #entrada{
 	display:inline;
-	background-image: linear-gradient(to left,#D1CFFF,white);
+	background-image: linear-gradient(to bottom right, #FFF889, white);
 	margin-left:5%;
 	margin-top: 1%;
 	width: 44%;
@@ -73,7 +73,7 @@ body{
 }
 #registro{
 	display:inline;
-	background-image: linear-gradient(to right,#D1CFFF,white);
+	background-image: linear-gradient(to bottom right, #FFF889, white);
 	margin-left:1%;
 	margin-top: 1%;
 	width: 44%;
@@ -97,7 +97,7 @@ footer{
 	margin-left: 5%;
 	margin-bottom: 2%;
 	margin-top: 2%;
-	background-image: linear-gradient(white,#D1CFFF);
+	background-image: linear-gradient(to bottom right, #FFF889, white);
 	box-sizing:border-box;
 	float:left;
 }
@@ -125,4 +125,25 @@ footer{
 	font-size:1em;
 	float:left;
 }
-
+#logo {
+    width: 95%;
+    height: 40px;
+    margin: 0 0 5% 5%
+}
+#header {
+    padding-top: 1%;
+    background-image: linear-gradient(to bottom right, #5F94FF, #FFFFFF);
+    height: auto;
+	border-bottom: 2px solid black;
+	width: 100%
+}
+button, a {
+    width: 100%;
+    background-color: #e6fff3;
+    margin-bottom: 2vh
+}
+.btn.btn-danger:hover {
+    background-color: #F7D128;
+    border-radius:1vw;
+    color: black;
+}
