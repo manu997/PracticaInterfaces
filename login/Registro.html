@@ -4,14 +4,13 @@
 <meta charset="utf-8" http-equiv="Content-Type" content="text/html" />
 <title>Registro</title>
 <link rel="icon" type="image/png" href="../Pictures/favicon.png" sizes="16x16">
-<link rel="StyleSheet" href="estilo1.css" type="text/css" media="screen">
+<link rel="StyleSheet" href="registro.css" type="text/css" media="screen">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" 
         href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" 
         crossorigin="anonymous">
 </head>
-
 <body>
   <div id="header">
     <div class="row">
@@ -19,7 +18,7 @@
             <img src="logo.png" id="logo" />
         </div>
         <div class="col-md-2">
-            <a class="btn btn-danger" href="">Inicio</a>
+            <a class="btn btn-danger" href="../index/Index.html">Inicio</a>
         </div>
         <div class="col-md-2">
             <a class="btn btn-danger" href="../alquiler/alquiler.html">Alquiler</a>
@@ -32,48 +31,82 @@
         </div>
     </div>
 </div>
-<br />
-<div id="entrada" >
-<h1 class="titulos">Iniciar sesión</h1>
-  <form>
-  Nombre de usuario: <input type="text" size="25" /><br /><br />
- 		<div class="aliniar">Contraceña:<input type="text" size="21" /><br /><br />
-  <input type="checkbox" />Recordar nombre de usuario<br /><br />
-  <input type="submit" name="enviar" value="Iniciar sesión" />
-  </form><br /><br />
-  <a href="#" >Has olvidado la contraceña?</a>
+<div class="container">
+  <div class="row">
+    <div class="col-md-6 sm-12" id="loginForm">
+      <h1 class="text-center">Iniciar sesión</h1>
+      <form>
+        <label for="user">Nombre de usuario</label><br>
+        <input type="text" class="form-control" id="user" />
+        <label for="clave">Contraseña</label><br>
+        <input type="password" class="form-control" id="clave" />
+        <button class="btn btn-link">¿Has olvidado la contraseña?</button><br>
+        <div class="form-check">
+            <input type="checkbox">
+            <label class="form-check-label">Recordar nombre de usuario</label>
+        </div>
+        <div class="row justify-content-center">
+            <button class="btn btn-danger">Iniciar sesión</button>
+        </div>
+      </form>
+    </div>
+    <div class="col-md-6 sm-12" id="registerForm">
+      <h1 class="text-center">Registro</h1>
+      <form>
+        <label for="user">Nombre de usuario</label><br>
+        <input type="text" class="form-control" id="user" />
+        <label for="email">Correo electrónico:</label><br>
+        <input type="text" class="form-control" id="email" />
+        <label for="clave">Contraseña</label><br>
+        <input type="password" class="form-control" id="clave" />
+        <label for="clave2">Repetir contraseña</label><br>
+        <input type="password" class="form-control" id="clave2" />
+        <div class="form-check">
+            <input type="checkbox">
+            <label class="form-check-label">Aceptar términos y condiciones</label>
+        </div>
+        <div class="row justify-content-center">
+            <button class="btn btn-danger">Registrarse</button>
+        </div>
+      </form>
+    </div>
   </div>
 </div>
-<div id="registro" >
-<h1 class="titulos">Registrate</h1>
-  <form>
-  Nombre de usuario: <input type="text" size="25" /><br /><br />
- Correo electronico: <input type="text" size="25" /><br /><br />
- 		<div class="aliniar">Contraceña: <input type="text" size="21" /><br /><br /></div>  
-  Repetir contraceña: <input type="text" size="25" /><br /><br />
-  <div class="aliniar">
-  <input type="checkbox" /> Acceptar terrminos y condiciones<br /><br />
-  <input type="submit" name="enviar" value="Registrarse" />
-  </form><br /><br /></div>
-</div>
-<footer>
-	<ul>
-  	  	<div id="piePrimero">
-                <li><a href="#">Direccion</a></li>
-                <li><a href="#">Coreo Electronico</a></li>
-                 <li><a href="#">Inicio</a></li>
-                <li><a href="#">Sobre Nostros</a></li>
-        </div>
-      	<div id="pieMedio">
-       		 <li><a href="#"><img src="logo.png" id="logopie"/></a></li>
-        </div>
-      	<div id="pieSegundo">
-            <li><a href="#">Nuestras Politicas</a></li>
-            <li><a href="#">Telefonos</a></li>
-             <li><a href="#">Alquiler</a></li>
-            <li><a href="#">Contacto</a></li>
-       	</div>
-  	</ul>
-</footer>
+<div class="row" id="footer">
+
+	<div class="col-4">
+	
+		<br>
+	
+	Calle del Padre Claret, 8, 28002 Madrid<br><br>
+	
+	<a href="" class="enlaces">Luxecar@Delux.com</a><br><br>
+	
+	<a href="" class="enlaces">Sobre Nosotros</a><br><br>
+	
+	<a href="" class="enlaces">Nuestras Politicas</a>
+	
+	
+	</div>
+	
+	<div class="col-4">
+	
+		<img src="logo.png" width="100%" style="margin-top: 20%">
+	
+	</div>
+	<div id="x" class="col-4">
+	
+	<br>
+	
+	Telefono Movil : +34685214785<br><br>
+	
+	Telefono Fijo : +34915195257 <br><br>
+	
+	Codigo Postal 28055<br><br>
+	
+	<a href="" class="enlaces">Contacto</a>
+	
+	
+	</div>
 </body>
 </html>

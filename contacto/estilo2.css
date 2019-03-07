@@ -22,7 +22,9 @@ body{
 	float:left;
 	
 	}
-	
+.row {
+    margin-right: 0;
+}
 .vmenu li a {	 display:inline;
 				height:2vw;
 				 padding:1%;
@@ -65,6 +67,12 @@ body{
 	background-image: linear-gradient(to bottom right, #FFF889, white);
 	text-align:justify;
 
+}
+.text-center {
+	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+.text-justify {
+	font-family: Arial, Helvetica, sans-serif
 }
 #f{
 	float: right;
@@ -119,7 +127,7 @@ footer{
 #logo {
     width: 95%;
     height: 40px;
-    margin: 0 0 5% 5%
+    margin: 0 0 5% 10%
 }
 #header {
     padding-top: 1%;
@@ -137,4 +145,31 @@ button, a {
     background-color: #F7D128;
     border-radius:1vw;
     color: black;
+}
+#footer{
+
+	background-image: linear-gradient(to bottom right, #5F94FF, #FFFFFF);
+    width: auto;
+	height: auto;
+	text-align: center;
+}
+
+.enlaces{
+
+	color: #FF0000;
+
+}
+.container {
+	background-image: linear-gradient(to bottom right, #FFF889, white);
+	padding-bottom: 5%;
+	margin-bottom: 5%
+}
+.row {
+    margin-right: 0 !important;
+}
+.col-md-2 {
+    max-width: 100% !important;
+}
+.form-control {
+	margin-bottom: 1%;
 }
